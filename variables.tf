@@ -32,7 +32,7 @@ variable "install_ansible_dependencies" {
   default = true
 }
 variable "ansible_dependencies_install_command" {
-  default = "sudo yum install -y python36"
+  default = "apt -y update && apt install -y python-minimal"
 }
 variable "run_ansible_playbook" {
   default = true
